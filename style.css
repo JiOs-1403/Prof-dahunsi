@@ -1,0 +1,191 @@
+.container{
+    margin: 0;
+    background-color: #fafafa;
+}
+
+div{
+    background-color: white;
+}
+
+body{
+    margin: 0;
+}
+
+
+button{
+    background-color: rgb(35, 34, 34);
+    border: none;
+    color: rgb(35, 34, 34) !important;
+    font-size: 16px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+p{
+    margin: 0;
+}
+
+.header{
+    height: 350px;
+}
+
+.ft{
+    color: white !important;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: large;
+    font-weight: 600;
+}
+
+
+.font {
+  font-family:"Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(99, 99, 99);
+}
+
+.himg1{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.himg2{
+    min-height: 100px;
+    max-height: 150px;
+    border-radius: 50%;
+    position: relative;
+    top: -62.5px;
+    left: 25px;
+}
+
+.bt1{
+    font-weight: 700;
+    font-size: xxx-large;
+    color: #4acaa8;
+    margin: 0;
+}
+
+.bt2{
+    font-weight: 600;
+    font-size: x-large;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.body{
+    padding: 25px;
+    margin-bottom: 5px;
+}
+
+.bt3{
+    margin: 30px 0;
+    color: rgb(156, 156, 156);
+    line-height: 1.5;
+}
+
+.publications{
+    padding: 25px;
+}
+
+.grid{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    display: grid;
+    padding: 15px;
+    border-bottom: 5px solid #fafafa;
+}
+
+.pub{
+    width: 80%;
+    margin: auto;
+}
+
+.pt1{
+    font-weight: 600;
+    font-size: medium;
+    margin: 7.5px 0;
+}
+
+.pt{
+    margin: 0 !important;
+}
+
+.contact{
+    padding: 25px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(35, 34, 34);
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #4acaa8;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 768px) and (min-width:320px) {
+    .grid{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr auto;
+    }
+
+    .pt1{
+        margin: 15px 0;
+    }
+
+    .pub{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
