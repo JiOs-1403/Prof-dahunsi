@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .container{
     margin: 0;
     background-color: #fafafa;
@@ -19,6 +21,8 @@ button{
     font-size: 16px;
     padding: 14px 16px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 p{
@@ -53,19 +57,31 @@ p{
 }
 
 .himg2{
-    min-height: 100px;
-    max-height: 150px;
+    min-height: 250px;
+    max-height: 350px;
     border-radius: 50%;
     position: relative;
-    top: -62.5px;
-    left: 25px;
+    top: -170.5px;
+    left: 0;
+}
+
+#h1mg2{
+    display: flex;
+    justify-content: center;
 }
 
 .bt1{
     font-weight: 700;
-    font-size: xxx-large;
+    font-size: x-large;
     color: #4acaa8;
     margin: 0;
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+#bt1{
+    display: flex;
+    justify-content: center;
 }
 
 .bt2{
@@ -86,8 +102,12 @@ p{
     line-height: 1.5;
 }
 
-.publications{
+.publications, .institution{
     padding: 25px;
+}
+
+.institution{
+    margin-bottom: 5px;
 }
 
 .grid{
@@ -96,6 +116,23 @@ p{
     display: grid;
     padding: 15px;
     border-bottom: 5px solid #fafafa;
+}
+
+.button{
+    background-color: rgb(99, 99, 99);
+    width: fit-content;
+    padding: 9px 18px;
+    border-radius: 4.5px;
+    margin-top: 20px;
+    margin-left: 74%;
+}
+
+.button:hover{
+    background-color: rgb(127, 127, 127);
+}
+
+.btn1{
+    color: white;
 }
 
 .pub{
@@ -109,18 +146,35 @@ p{
     margin: 7.5px 0;
 }
 
+.pt1:hover{
+    text-decoration: underline;
+}
+
 .pt{
     margin: 0 !important;
 }
 
+a{
+    text-decoration: none;
+}
+
 .contact{
     padding: 25px;
+    background-color: #4acaa8;
 }
 
 .navbar {
   overflow: hidden;
   background-color: rgb(35, 34, 34);
 }
+
+.nbar{
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+}
+
+
 .navbar a {
   float: left;
   font-size: 16px;
@@ -174,6 +228,49 @@ p{
   display: block;
 }
 
+
+.ft1{
+    font-size: large;
+    margin-left: 5px ;
+}
+
+a{
+    margin: 0 !important;
+}
+
+.inst{
+    width: 100%;
+    transform: scale(0.9);
+    margin-top: 20px;
+}
+
+.grid2{
+     grid-template-columns: 100%;
+     grid-template-rows: 1fr auto;
+}
+
+.ct{
+    color: white !important;
+    margin: 5px 0;
+}
+
+.contact > .grid, .contact-info, .foot{
+    background-color: #4acaa8;
+    border-bottom: 0 !important;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px;
+}
+
+.fot{
+    font-size: x-small;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
 @media (max-width: 768px) and (min-width:320px) {
     .grid{
         grid-template-columns: 100%;
@@ -187,5 +284,44 @@ p{
     .pub{
         width: 100%;
         margin-bottom: 25px;
+    }
+
+    .bt1{
+        font-size: x-large;
+        margin-top: 30px;
+    }
+
+    .bt2{
+        font-size: large;
+    }
+
+    .himg2{
+    max-height: 250px;
+    border-radius: 50%;
+    position: relative;
+    top: -112.5px;
+    left: 0;
+    }
+    
+    #h1mg2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{
+        margin-left: 0;
+        border-radius: 3.5px;
+        padding: 8px 14px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #bttn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-info{
+        margin-top: 10px;
     }
 }
