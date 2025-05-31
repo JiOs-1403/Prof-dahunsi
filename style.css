@@ -276,6 +276,10 @@ a{
     color: rgb(255, 255, 255);
 }
 
+span > a{
+    color: white;
+}
+
 @media (max-width: 768px) and (min-width:320px) {
     .grid{
         grid-template-columns: 100%;
